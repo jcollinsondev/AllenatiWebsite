@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@font-face {
+    font-family: "Zealandia";
+    src: url(fonts/PNAZealandia-Light.woff);
+}
+
+body {
+    background: #e6e9f0;
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    color: #1f2025;
+    font-family: "Inter", sans-serif;
+
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #9d9d9d;
+}
+
+a:link {
+  color: #000000;
+}
+
+*,*:after,*:before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    width: min(100%, 64rem);
+}
+
+@media screen and (max-width: 80rem) {
+    nav {
+        padding-top: 1rem;
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo span {
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.download-button {
+  align-items: center;
+  border-radius: 0.4rem;
+  font-weight: 600;
+  padding: 0.8rem 1.2rem;
+  color: #ddd;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem rgba(143, 142, 142, 0.15) !important;
+  background: #000000;
+}
+
+.download-button:link, .download-button:visited, .download-button:hover, .download-button:active {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.apple-store-badge {
+    cursor: pointer;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    padding-top: 8rem;
+    padding-inline: 1rem;
+}
+
+#hero .hero-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#hero h1 {
+    font-family: "Zealandia", sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    width: min(100%, 32rem);
+    align-self: center
+}
+
+#hero .subtitle {
+    text-align: center;
+    width: min(100%, 24rem);
+    align-self: center;
+    font-weight: 300;
+    color: #666666
+}
+
+@media screen and (max-width: 80rem) {
+    #hero {
+        padding-top: 4rem;
+    }
+
+    #hero h1 {
+        font-size: 3rem;
+    }
+}

@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "dependencies": {
+    "@vercel/edge": "^0.1.2"
+  },
+  "scripts": {
+    "deploy": "npx vercel alias set 3d-portfolio-seven-beryl.vercel.app jcollinson.dev"
+  }
+}
