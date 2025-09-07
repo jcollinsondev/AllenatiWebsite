@@ -46,6 +46,14 @@ nav {
 }
 
 @media screen and (max-width: 80rem) {
+    footer nav {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 80rem) {
     nav {
         padding-top: 1rem;
     }
@@ -106,8 +114,10 @@ nav {
     font-family: "Zealandia", sans-serif;
     font-size: 4rem;
     text-align: center;
-    width: min(100%, 32rem);
-    align-self: center
+    width: min(100%, 48rem);
+    align-self: center;
+    line-height: 3rem;
+    padding-bottom: 1rem;
 }
 
 #hero .subtitle {
@@ -115,7 +125,7 @@ nav {
     width: min(100%, 24rem);
     align-self: center;
     font-weight: 300;
-    color: #666666
+    color: #666666;
 }
 
 @media screen and (max-width: 80rem) {
