@@ -5,10 +5,19 @@
     src: url(fonts/PNAZealandia-Light.woff);
 }
 
+:root {
+    --main-text-color: #1f2025;
+    --secondary-text-color: #9d9d9d;
+    --subtitle-text-color: #666666;
+    --main-button-color: #000000;
+    --main-button-text-color: #ddd;
+    --link-color: #000000;
+}
+
 body {
     background: #e6e9f0;
     background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
-    color: #1f2025;
+    color: var(--main-text-color);
     font-family: "Inter", sans-serif;
 
     display: grid;
@@ -17,11 +26,11 @@ body {
 
 p {
     font-size: 1.2rem;
-    color: #9d9d9d;
+    color: var(--secondary-text-color);
 }
 
 a:link {
-  color: #000000;
+  color: var(--link-color);
 }
 
 *,*:after,*:before {
@@ -75,15 +84,15 @@ nav {
   border-radius: 0.4rem;
   font-weight: 600;
   padding: 0.8rem 1.2rem;
-  color: #ddd;
+  color: var(--main-button-text-color);
   border: none;
   cursor: pointer;
   box-shadow: 0 0.5rem 1rem rgba(143, 142, 142, 0.15) !important;
-  background: #000000;
+  background: var(--main-button-color);
 }
 
 .download-button:link, .download-button:visited, .download-button:hover, .download-button:active {
-    color: #ddd;
+    color: var(--main-button-text-color);
     text-decoration: none;
 }
 
@@ -125,7 +134,44 @@ nav {
     width: min(100%, 24rem);
     align-self: center;
     font-weight: 300;
-    color: #666666;
+    color: var(--subtitle-text-color);
+}
+
+@media screen and (min-width: 96rem) {
+    :root {
+        --main-text-color: #e3e3e3;
+        --secondary-text-color: #cbcbcb;
+        --subtitle-text-color: #acacac;
+        --main-button-color: #ffffff;
+        --main-button-text-color: #222222;
+        --link-color: #ffffff;
+    }
+
+    body {
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(./background.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 100vh;
+    }
+
+    #hero h1 {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+    
+    #iphone-mockup {
+        position: absolute;
+        right: 10%;
+        top: 20%;
+        transform: rotate(8deg) scale(0.9);
+        filter: brightness(80%);
+    }
+
+    #hero {
+        padding-top: 16rem;
+    }
 }
 
 @media screen and (max-width: 80rem) {
