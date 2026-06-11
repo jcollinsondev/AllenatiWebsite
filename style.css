@@ -41,18 +41,13 @@ a:link {
     padding: 0;
 }
 
-body::before {
-    content: "";
-    position: fixed;
-    top: -20vh;
-    left: 0;
-    right: 0;
-    bottom: -20vh;
-
-    z-index: -1;
-
+html {
     background:
         url("images/abstract-minimal-gradient-grainy-background.jpg") center center / cover no-repeat;
+}
+
+body {
+    background: transparent;
 }
 
 /* =========================
