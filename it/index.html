@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="/_vercel/insights/script.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
     <link
       rel="stylesheet"
       href="/style.css"
@@ -19,7 +20,9 @@
 <body>
   <header class="hero">
     <div class="hero__content">
-      <img src="../images/logo.svg" alt="Allenati Logo" class="hero__logo">
+      <model-viewer id="model" src="../assets/logo-metallic.gltf" camera-controls auto-rotate environment-image="neutral"
+        exposure="2" auto-rotate-delay="0" interaction-prompt="none" camera-orbit="80deg 120deg" disable-zoom>
+      </model-viewer>
 
       <h1 class="hero__title">
         Allenati a Modo Tuo
