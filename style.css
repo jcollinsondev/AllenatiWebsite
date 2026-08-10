@@ -51,11 +51,8 @@ body::before {
 
     z-index: -1;
 
-    background:
-        linear-gradient(to bottom,
-            rgba(255, 255, 255, 1) 0%,
-            rgba(255, 255, 255, 0) 50%),
-        url("images/abstract-minimal-gradient-grainy-background.jpg") center center / cover no-repeat;
+    background: url(images/noise.svg) center center / cover repeat, radial-gradient(at right bottom, #4c454b, #06b58e);
+    filter: contrast(400%) brightness(80%) blur(10px);
 }
 
 /* =========================
@@ -107,11 +104,11 @@ body::before {
     font-size: clamp(3.5rem, 7vw, 6rem);
     line-height: 0.95;
 
-    font-weight: 400;
+    font-weight: 600;
 
     margin-bottom: 2rem;
 
-    color: #4b3054;
+    color: #fff;
 }
 
 .hero__subtitle {
@@ -122,7 +119,7 @@ body::before {
     font-size: 1.4rem;
     line-height: 1.4;
 
-    color: #453b48;
+    color: #d8fff6;
 }
 
 .hero__store-link {
