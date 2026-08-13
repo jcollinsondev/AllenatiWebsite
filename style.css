@@ -52,7 +52,7 @@ body::before {
     z-index: -1;
 
     background: url(images/noise.svg) center center / cover repeat, radial-gradient(at right bottom, #4c454b, #06b58e);
-    filter: contrast(400%) brightness(80%) blur(10px);
+    filter: contrast(1000%) brightness(80%) blur(30px);
 }
 
 /* =========================
