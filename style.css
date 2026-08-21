@@ -41,7 +41,49 @@ a:link {
     padding: 0;
 }
 
-body::before {
+body {
+    background-color: #000;
+}
+
+.background-animation {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 60%;
+    overflow: hidden;
+    filter: blur(50px);
+}
+
+.circle-container {
+    position: relative;
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.3;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0.8);
+        opacity: 0.3;
+    }
+}
+
+/*body::before {
     content: "";
     position: fixed;
     top: -20vh;
@@ -53,7 +95,7 @@ body::before {
 
     background: url(images/noise.svg) center center / cover repeat, radial-gradient(at right bottom, #4c454b, #06b58e);
     filter: contrast(1000%) brightness(80%) blur(30px);
-}
+}*/
 
 /* =========================
    HERO
@@ -119,7 +161,7 @@ body::before {
     font-size: 1.4rem;
     line-height: 1.4;
 
-    color: #d8fff6;
+    color: #cacaca;
 }
 
 .hero__store-link {
